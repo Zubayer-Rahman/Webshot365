@@ -1,0 +1,154 @@
+.about {
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.content > p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.highlight {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(102, 102, 255, 0.1) 0%, rgba(0, 217, 255, 0.05) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  transition: all var(--transition-normal);
+}
+
+.highlight:hover {
+  border-color: var(--color-accent);
+  background: linear-gradient(135deg, rgba(102, 102, 255, 0.15) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.highlight h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.highlight ul {
+  margin: 0;
+  list-style: none;
+}
+
+.highlight li {
+  padding: 0.25rem 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.highlight li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+}
+
+.team h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.member {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(26, 31, 53, 0.5) 0%, rgba(36, 45, 77, 0.3) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  transition: all var(--transition-normal);
+}
+
+.member:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.1);
+}
+
+.avatar {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.member h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.member p {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .team {
+    order: -1;
+  }
+
+  .members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .member {
+    padding: 1rem;
+  }
+
+  .avatar {
+    font-size: 2rem;
+  }
+}

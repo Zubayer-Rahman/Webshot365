@@ -1,0 +1,147 @@
+.portfolio {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 217, 255, 0.05) 50%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 31, 53, 0.5) 0%,
+    rgba(36, 45, 77, 0.3) 100%
+  );
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImage {
+  font-size: 4rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_ h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.client {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin: 0;
+}
+
+.section {
+  margin: 1rem 0;
+}
+
+.section h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(102, 102, 255, 0.1);
+  border: 1px solid rgba(102, 102, 255, 0.3);
+  color: var(--color-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-fast);
+}
+
+.tag:hover {
+  background: rgba(102, 102, 255, 0.2);
+  border-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectImage {
+    font-size: 2.5rem;
+  }
+
+  .imageWrapper {
+    height: 150px;
+  }
+}
