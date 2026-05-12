@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import styles from "./Footer.module.css";
+import styles from './Footer.module.css';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,9 +11,7 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.column}>
             <h3 className={styles.heading}>TechVenture</h3>
-            <p>
-              Building exceptional software solutions for tomorrows challenges.
-            </p>
+            <p>Building exceptional software solutions for tomorrow's challenges.</p>
             <div className={styles.social}>
               <a href="#" aria-label="Twitter">
                 𝕏
@@ -66,8 +64,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Contact</h4>
             <p>
-              Email:{" "}
-              <a href="mailto:hello@techventure.dev">hello@techventure.dev</a>
+              Email: <a href="mailto:hello@techventure.dev">hello@techventure.dev</a>
             </p>
             <p>
               Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
