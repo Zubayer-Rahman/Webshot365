@@ -57,10 +57,9 @@ export function useParallax(speed: number = 0.5) {
     if (!elementRef.current) return;
 
     gsap.to(elementRef.current, {
-      y: (index, target) => {
-        return (
-          (gsap.getProperty(target, "offsetHeight") as number) * speed * -1
-        );
+      y: () => {
+        const current = elementRef.current;
+        return current ? current.offsetHeight * speed * -1 : 0;
       },
       scrollTrigger: {
         trigger: elementRef.current,
