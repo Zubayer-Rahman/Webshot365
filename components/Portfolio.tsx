@@ -15,6 +15,7 @@ interface Project {
   solution: string;
   tech: string[];
   image: string;
+  color: string;
 }
 
 const projects: Project[] = [
@@ -25,6 +26,7 @@ const projects: Project[] = [
     problem: 'Legacy e-commerce system with poor performance and user experience.',
     solution: 'Built a modern, scalable e-commerce platform with real-time inventory management.',
     tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    color: '#E3F2FD',
     image: '',
   },
   {
@@ -34,6 +36,7 @@ const projects: Project[] = [
     problem: 'No mobile presence, losing users to competitors.',
     solution: 'Developed iOS and Android fitness tracking apps with ML-based workout recommendations.',
     tech: ['React Native', 'Firebase', 'TensorFlow', 'Swift'],
+    color: '#FFF3E0',
     image: '',
   },
   {
@@ -43,6 +46,7 @@ const projects: Project[] = [
     problem: 'Multiple disconnected tools reducing team productivity.',
     solution: 'Integrated CRM system with AI-powered analytics and automation.',
     tech: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
+    color: '#E8F5E9',
     image: '',
   },
   {
@@ -52,6 +56,7 @@ const projects: Project[] = [
     problem: 'Manual patient record management causing errors.',
     solution: 'Secure patient portal with encrypted records and telehealth features.',
     tech: ['Next.js', 'GraphQL', 'AWS', 'HIPAA Compliant'],
+    color: '#F3E5F5',
     image: '',
   },
   {
@@ -61,6 +66,7 @@ const projects: Project[] = [
     problem: 'Difficult property search and management for agents.',
     solution: 'Interactive 3D property viewer with VR tours and smart matching.',
     tech: ['Three.js', 'WebGL', 'WebRTC', 'AWS S3'],
+    color: '#FFFDE7',
     image: '',
   },
   {
@@ -70,6 +76,7 @@ const projects: Project[] = [
     problem: 'Complex data hard to visualize and understand.',
     solution: 'Real-time analytics dashboard with interactive charts and predictions.',
     tech: ['D3.js', 'Python ML', 'WebSocket', 'Kafka'],
+    color: '#ECEFF1',
     image: '',
   },
 ];
