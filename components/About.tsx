@@ -7,20 +7,20 @@ import styles from './About.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface TeamMember {
-  name: string;
-  role: string;
-  emoji: string;
-}
+// interface TeamMember {
+//   name: string;
+//   role: string;
+//   emoji: string;
+// }
 
-const teamMembers: TeamMember[] = [
-  { name: 'Alex Chen', role: 'Founder & CTO', emoji: '👨‍💻' },
-  { name: 'Sarah Johnson', role: 'Lead Designer', emoji: '👩‍🎨' },
-  { name: 'Mike Patel', role: 'Full Stack Developer', emoji: '🧑‍💻' },
-  { name: 'Emma Davis', role: 'Project Manager', emoji: '👩‍💼' },
-  { name: 'James Wilson', role: 'DevOps Engineer', emoji: '⚙️' },
-  { name: 'Lisa Chen', role: 'QA Lead', emoji: '🔍' },
-];
+// const teamMembers: TeamMember[] = [
+//   { name: 'Alex Chen', role: 'Founder & CTO', emoji: '👨‍💻' },
+//   { name: 'Sarah Johnson', role: 'Lead Designer', emoji: '👩‍🎨' },
+//   { name: 'Mike Patel', role: 'Full Stack Developer', emoji: '🧑‍💻' },
+//   { name: 'Emma Davis', role: 'Project Manager', emoji: '👩‍💼' },
+//   { name: 'James Wilson', role: 'DevOps Engineer', emoji: '⚙️' },
+//   { name: 'Lisa Chen', role: 'QA Lead', emoji: '🔍' },
+// ];
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -58,7 +58,7 @@ export default function About() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.content}>
-            <h2>About TechVenture</h2>
+            <h2>About WEBSHOT</h2>
             <p>
               We are a team of passionate developers, designers, and innovators committed to transforming
               businesses through technology.
@@ -95,7 +95,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className={styles.team}>
+          {/* <div className={styles.team}>
             <h3>Meet Our Team</h3>
             <div className={styles.members}>
               {teamMembers.map((member, index) => (
@@ -112,7 +112,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

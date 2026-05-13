@@ -40,6 +40,9 @@ export default function Footer() {
               <li>
                 <a href="#services">Bug Fixing</a>
               </li>
+              <li>
+                <a href="#services">Cloud Solutions</a>
+              </li>
             </ul>
           </div>
 
@@ -64,10 +67,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Contact</h4>
             <p>
-              Email: <a href="mailto:hello@techventure.dev">hello@techventure.dev</a>
+              Email: <a href="mailto:webshot2024@gmail.com">webshot2024@gmail.com</a>
             </p>
             <p>
-              Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+              Phone: <a href="tel:+8801841232167">+880 184 123 2167</a>
             </p>
             <p>Dhaka, Bangladesh</p>
           </div>
@@ -76,7 +79,7 @@ export default function Footer() {
         <div className={styles.divider}></div>
 
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} TechVenture. All rights reserved.</p>
+          <p>&copy; {currentYear} WEBSHOT. All rights reserved.</p>
           <div className={styles.links}>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

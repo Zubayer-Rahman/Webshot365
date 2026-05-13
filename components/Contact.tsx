@@ -53,7 +53,7 @@ export default function Contact() {
             <div className={styles.infoCard}>
               <h3>📧 Email</h3>
               <p>
-                <a href="mailto:hello@techventure.dev">hello@techventure.dev</a>
+                <a href="mailto:webshot2024@gmail.com">webshot2024@gmail.com</a>
               </p>
               <p className={styles.subtext}>We respond within 24 hours</p>
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
             <div className={styles.infoCard}>
               <h3>📞 Phone</h3>
               <p>
-                <a href="tel:+8801234567890">+880 (123) 456-7890</a>
+                <a href="tel:+8801841232167">+880 184 123 2167</a>
               </p>
               <p className={styles.subtext}>
                 Available Monday - Friday, 9AM - 6PM
