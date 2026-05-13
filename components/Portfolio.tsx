@@ -15,7 +15,6 @@ interface Project {
   solution: string;
   tech: string[];
   image: string;
-  color: string;
 }
 
 const projects: Project[] = [
@@ -26,8 +25,7 @@ const projects: Project[] = [
     problem: 'Legacy e-commerce system with poor performance and user experience.',
     solution: 'Built a modern, scalable e-commerce platform with real-time inventory management.',
     tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    image: '🛍️',
-    color: '#00d9ff',
+    image: '',
   },
   {
     id: '2',
@@ -36,8 +34,7 @@ const projects: Project[] = [
     problem: 'No mobile presence, losing users to competitors.',
     solution: 'Developed iOS and Android fitness tracking apps with ML-based workout recommendations.',
     tech: ['React Native', 'Firebase', 'TensorFlow', 'Swift'],
-    image: '💪',
-    color: '#a855f7',
+    image: '',
   },
   {
     id: '3',
@@ -46,8 +43,7 @@ const projects: Project[] = [
     problem: 'Multiple disconnected tools reducing team productivity.',
     solution: 'Integrated CRM system with AI-powered analytics and automation.',
     tech: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
-    image: '📊',
-    color: '#6366f1',
+    image: '',
   },
   {
     id: '4',
@@ -56,8 +52,7 @@ const projects: Project[] = [
     problem: 'Manual patient record management causing errors.',
     solution: 'Secure patient portal with encrypted records and telehealth features.',
     tech: ['Next.js', 'GraphQL', 'AWS', 'HIPAA Compliant'],
-    image: '🏥',
-    color: '#10b981',
+    image: '',
   },
   {
     id: '5',
@@ -66,8 +61,7 @@ const projects: Project[] = [
     problem: 'Difficult property search and management for agents.',
     solution: 'Interactive 3D property viewer with VR tours and smart matching.',
     tech: ['Three.js', 'WebGL', 'WebRTC', 'AWS S3'],
-    image: '🏠',
-    color: '#f59e0b',
+    image: '',
   },
   {
     id: '6',
@@ -76,8 +70,7 @@ const projects: Project[] = [
     problem: 'Complex data hard to visualize and understand.',
     solution: 'Real-time analytics dashboard with interactive charts and predictions.',
     tech: ['D3.js', 'Python ML', 'WebSocket', 'Kafka'],
-    image: '📈',
-    color: '#ef4444',
+    image: '',
   },
 ];
 
