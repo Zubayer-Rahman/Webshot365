@@ -26,11 +26,11 @@ const services: Service[] = [
 
 const features: Feature[] = [
   { id: 'auth', name: 'Authentication', price: 300, category: 'Backend' },
-  { id: 'payment', name: 'Payment Integration', price: 2000, category: 'Backend' },
-  { id: 'db', name: 'Database Setup', price: 1500, category: 'Backend' },
-  { id: 'api', name: 'REST API', price: 2000, category: 'Backend' },
-  { id: 'ui', name: 'Custom UI Design', price: 3000, category: 'Frontend' },
-  { id: 'dashboard', name: 'Analytics Dashboard', price: 2500, category: 'Frontend' },
+  { id: 'payment', name: 'Payment Integration', price: 200, category: 'Backend' },
+  { id: 'db', name: 'Database Setup', price: 150, category: 'Backend' },
+  { id: 'api', name: 'REST API', price: 200, category: 'Backend' },
+  { id: 'ui', name: 'Custom UI Design', price: 500, category: 'Frontend' },
+  { id: 'dashboard', name: 'Analytics Dashboard', price: 1000, category: 'Frontend' },
   { id: 'realtime', name: 'Real-time Features', price: 2000, category: 'Advanced' },
   { id: 'ml', name: 'AI/ML Integration', price: 4000, category: 'Advanced' },
   { id: 'testing', name: 'QA & Testing', price: 1500, category: 'Advanced' },

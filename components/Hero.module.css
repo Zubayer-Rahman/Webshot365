@@ -145,6 +145,23 @@
     padding-top: 60px;
   }
 
+  .title {
+    text-align: left;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 2rem;
+    span {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    word-spacing: normal;
+  }
+
+  .subtitle {
+    text-align: left;
+    width: 100%;
+  }
+
   .glow {
     width: 400px;
     height: 400px;
@@ -163,5 +180,6 @@
 
   .stats {
     grid-template-columns: 1fr;
+    padding-top: 10px;
   }
 }

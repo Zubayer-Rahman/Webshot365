@@ -53,8 +53,8 @@ export default function Hero() {
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className={styles.content}>
-          <h1 ref={titleRef} className={styles.title}>We Build Exceptional Software</h1>
-    
+          <h1 ref={titleRef} className={styles.title}>We Build <span>Exceptional Software</span></h1>
+
           <p ref={subtitleRef} className={styles.subtitle}>
             Custom web apps, mobile applications, websites, and complete
             software solutions. From concept to deployment, we transform your
