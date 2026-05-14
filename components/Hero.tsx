@@ -3,10 +3,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "./Hero.module.css";
+import CountUp from "./CounterVariable";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
 
@@ -18,7 +19,7 @@ export default function Hero() {
         titleRef.current,
         { opacity: 0, y: 40 },
         { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" },
-        0,
+        0.4,
       )
       .fromTo(
         subtitleRef.current,
@@ -34,13 +35,13 @@ export default function Hero() {
       );
 
     // Continuous floating animation for elements
-    gsap.to(titleRef.current, {
-      y: -10,
-      duration: 3,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-    });
+    // gsap.to(titleRef.current, {
+    //   y: -10,
+    //   duration: 3,
+    //   repeat: -1,
+    //   yoyo: true,
+    //   ease: "sine.inOut",
+    // });
   }, []);
 
   return (
@@ -52,9 +53,7 @@ export default function Hero() {
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className={styles.content}>
-          <h1 className={styles.title}>
-            We Build Exceptional Software
-          </h1>
+          <h1 ref={titleRef} className={styles.title}>We Build Exceptional Software</h1>
     
           <p ref={subtitleRef} className={styles.subtitle}>
             Custom web apps, mobile applications, websites, and complete
@@ -73,15 +72,21 @@ export default function Hero() {
 
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <div className={styles.number}>50+</div>
+              <div className={styles.number}>
+                <CountUp to={50} /> +
+              </div>
               <div className={styles.label}>Projects Completed</div>
             </div>
             <div className={styles.stat}>
-              <div className={styles.number}>30+</div>
+              <div className={styles.number}>
+                <CountUp to={30} /> +
+              </div>
               <div className={styles.label}>Happy Clients</div>
             </div>
             <div className={styles.stat}>
-              <div className={styles.number}>8+</div>
+              <div className={styles.number}>
+                <CountUp to={8} /> +
+              </div>
               <div className={styles.label}>Years Experience</div>
             </div>
           </div>

@@ -19,13 +19,13 @@ interface Feature {
 }
 
 const services: Service[] = [
-  { id: 'web', name: 'Web Application', basePrice: 5000, icon: '🌐' },
-  { id: 'mobile', name: 'Mobile App (iOS & Android)', basePrice: 8000, icon: '📱' },
-  { id: 'desktop', name: 'Desktop Software', basePrice: 6000, icon: '💻' },
+  { id: 'web', name: 'Web Application', basePrice: 1000, icon: '🌐' },
+  { id: 'mobile', name: 'Mobile App (iOS & Android)', basePrice: 2500, icon: '📱' },
+  { id: 'desktop', name: 'Desktop Software', basePrice: 3500, icon: '💻' },
 ];
 
 const features: Feature[] = [
-  { id: 'auth', name: 'Authentication', price: 1000, category: 'Backend' },
+  { id: 'auth', name: 'Authentication', price: 300, category: 'Backend' },
   { id: 'payment', name: 'Payment Integration', price: 2000, category: 'Backend' },
   { id: 'db', name: 'Database Setup', price: 1500, category: 'Backend' },
   { id: 'api', name: 'REST API', price: 2000, category: 'Backend' },
